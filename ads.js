@@ -3,7 +3,7 @@
 // @namespace    AutoADS
 // @version      0.2
 // @description	 Grabs latest versions of the bot scripts automatically.
-// @author       http://fb.com/duclvz
+// @author       http://fb.com/duclvzx
 // @include      http://useclix.com/*
 // @grant        none
 // ==/UserScript==
