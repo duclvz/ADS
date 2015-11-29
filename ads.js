@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         AutoADS
 // @namespace    AutoADS
-// @version      0.1
-// @description  try to take over the world!
+// @version      0.2
+// @description	 Grabs latest versions of the bot scripts automatically.
 // @author       http://fb.com/duclvz
-// @match        http://useclix.com/*
+// @include      http://useclix.com/*
 // @grant        none
 // ==/UserScript==
 
