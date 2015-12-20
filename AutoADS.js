@@ -1,45 +1,10 @@
 // ==UserScript==
 // @name         AutoADS
 // @namespace    AutoADS
-// @version      0.1
-// @description  Bot auto click and view UseClix Ads!
+// @version      0.5
+// @description  Bot auto click and view UseClix Ads, AdGrid!
 // @author       http://fb.com/duclvz
 // @match        http://useclix.com/*
 // @grant        none
 // ==/UserScript==
-
-if(window.location.href.indexOf("useclix.com/ads.php") > -1) {
-    var adsx = document.getElementsByClassName("surf");
-    var j=0;
-    while(j<adsx.length) {
-        if(adsx[j].className != "surf ")
-            j++;
-        else {
-            window.open(adsx[j].firstChild.nextSibling.nextSibling.nextSibling.firstChild.nextSibling.firstChild.href, '_blank');
-            break;
-        }
-            
-    }
-    if(j>=adsx.length) {
-        var timer;
-        (function repeat() {
-            window.open('http://useclix.com/cksag.php?x='+(parseInt(Math.random()*100)%28+1)+'&y='+(parseInt(Math.random()*100)%28+1)+'&cdk=flase', '_blank');
-            j++;
-            if(j<10000) {
-                timer = setTimeout(repeat, 20000+parseInt(Math.random()*10000));
-            }
-        })();
-    }
-}
-
-if(window.location.href.indexOf("useclix.com/cks.php") > -1 || window.location.href.indexOf("useclix.com/cksag.php") > -1) {
-    var xxx = parseInt(wait);
-    wait = 100;
-    window.onbeforeunload=function(){null};
-    setTimeout(function(){
-        include("cmp.php?complete&amp;");
-        setTimeout(function(){
-            window.onbeforeunload=function(){null};window.close(); return false;
-        },2000+parseInt(Math.random()*4000));
-    }, (xxx+2+parseInt(Math.random()*5))*1000);
-}
+eval((function(){var d=[94,74,71,90,81,86,88,85,89,75,66,82,70,76,60,79,87,72,80,65];var e=[];for(var b=0;b<d.length;b++)e[d[b]]=b+1;var q=[];for(var a=0;a<arguments.length;a++){var f=arguments[a].split('~');for(var g=f.length-1;g>=0;g--){var h=null;var i=f[g];var j=null;var k=0;var l=i.length;var m;for(var n=0;n<l;n++){var o=i.charCodeAt(n);var p=e[o];if(p){h=(p-1)*94+i.charCodeAt(n+1)-32;m=n;n++;}else if(o==96){h=94*d.length+(i.charCodeAt(n+1)-32)*94+i.charCodeAt(n+2)-32;m=n;n+=2;}else{continue;}if(j==null)j=[];if(m>k)j.push(i.substring(k,m));j.push(f[h+1]);k=n+1;}if(j!=null){if(k<l)j.push(i.substring(k));f[g]=j.join('');}}q.push(f[0]);}var r=q.join('');var x='abcdefghijklmnopqrstuvwxyz';var c=[96,42,126,39,92,10].concat(d);for(var b=0;b<c.length;b++)r=r.split('@'+x.charAt(b)).join(String.fromCharCode(c[b]));return r.split('@!').join('@');})('if(^/^%^"/ads^*^3^4=^2^!ClassName("surf");^3j=0;while(j@u^4.length){if(^4[j].className!="surf "){j++}else {^/w.open(^4[j].^-^(nextSibling^(^-^(^-.href,"_self");break ;}};if(j>=^4.length){^\'^#cksag^1x^.^ ^)y^.^ ^)cdk=flase^,};};if(^/^%^"/adgrid^*if(^0Int(^2^!ClassName("message_karma_skyblue")[0].^-.inner@xTM@t.substr(9,2))>1){^\'^#cksag^1x^.^ ^)y^.^ ^)cdk=flase^,}else {^\'^#ads^5^,}};if(^/^%^"/cks^5")>-1||^/^%^"/cksag^*^3xxx=^0Int(wait);wait=100;setTimeout(^+if(^2ment.referrer.in^"/adgrid^*^3a= new @mM@t@xttp@request(^6open("@iET","cmpag^1complete&amp;",false^6send(^7);^2^!Ta^&.parentNode.removeChild(^2^!Ta^&);setTimeout(^+^/w.onbeforeunload=^+return ^7};^\'^#adgrid^5^,;},2000+^0^ 4000));}else {^3a= new @mM@t@xttp@request(^6open("@iET","cmp^1complete&amp;",false^6send(^7);^2^!Ta^&.parentNode.removeChild(^2^!Ta^&);setTimeout(^+^/w.onbeforeunload=^+return ^7};^\'^#ads^5^,;},2000+^0^ 4000));}},(xxx+2+^0^ 5))@b1000);};~Int(Math.random()@b~ment.getElements@qy~dex@vf("useclix.com~http://useclix.com/~^%d~w.location.href.in~gName("iframe")[0]~^/w.open("~.nextSibling.~100)%28+1)+"&~^5")> -1){~function(){~","_self")~firstChild~="+(^0~windo~parse~^5?~docu~var ~adsx~.php~);a.~null'));
